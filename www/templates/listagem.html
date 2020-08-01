@@ -1,0 +1,11 @@
+
+<ion-view>
+	<ion-nav-title>Mercado  </ion-nav-title>
+	<ion-content>
+      <ion-list>
+        <ion-item ng-repeat="produto in listaDeProduto" href="#/produtoescolhido/{{produto}}" >
+          {{produto.nome}} - R{{produto.preco | currency}}
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
